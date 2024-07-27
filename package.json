@@ -1,0 +1,26 @@
+{
+  "name": "mern-task-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "backend": " nodemon backend/server.js",
+    "fn": "npm start --prefix frontend",
+    "all": "concurrently \"npm run backend\" \"npm run fn\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "react-toastify": "^10.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}
